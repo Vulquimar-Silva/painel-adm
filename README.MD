@@ -1,4 +1,3 @@
-# plenty-loops-join
 
 <div align="center" style="margin: 30px;">
     <a href="https://refine.dev">
@@ -7,7 +6,7 @@
 </div>
 <br/>
 
-This [Refine](https://github.com/refinedev/refine) project was generated with [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
+Este projeto [Refine](https://github.com/refinedev/refine) foi gerado com [create refine-app](https://github.com/refinedev/refine/tree/master/packages/create-refine-app).
 
 ## Getting Started
 
