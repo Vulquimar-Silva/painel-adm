@@ -11,9 +11,9 @@ This [Refine](https://github.com/refinedev/refine) project was generated with [c
 
 ## Getting Started
 
-A React Framework for building internal tools, admin panels, dashboards & B2B apps with unmatched flexibility ✨
+Um Framework React para construir ferramentas internas, painéis de administração, dashboards e aplicativos B2B com flexibilidade incomparável ✨
 
-Refine's hooks and components simplifies the development process and eliminates the repetitive tasks by providing industry-standard solutions for crucial aspects of a project, including authentication, access control, routing, networking, state management, and i18n.
+Os hooks e componentes do Refine simplificam o processo de desenvolvimento e eliminam as tarefas repetitivas ao fornecer soluções padrão da indústria para aspectos cruciais de um projeto, incluindo autenticação, controle de acesso, roteamento, rede, gerenciamento de estado e i18n (internacionalização).
 
 ## Available Scripts
 
