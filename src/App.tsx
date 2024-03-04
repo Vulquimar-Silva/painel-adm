@@ -1,5 +1,5 @@
 import { Authenticated, Refine } from "@refinedev/core";
-import { DevtoolsProvider } from "@refinedev/devtools";
+import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import { Home, ForgotPassword, Login, Register } from "./pages"
 import {
@@ -62,6 +62,7 @@ function App() {
                 <UnsavedChangesNotifier />
                 <DocumentTitleHandler />
               </Refine>
+            <DevtoolsPanel />
             </DevtoolsProvider>
           </AntdApp>
       </RefineKbarProvider>

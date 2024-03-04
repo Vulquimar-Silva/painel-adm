@@ -8,7 +8,7 @@ type Props = {
   isLoading: boolean,
   totalCount?: number
 }
-
+// 2:32:37
 const DashboardTotalCountCard = ({ resource, isLoading, totalCount }: Props) => {
 
   const { primaryColor, secondaryColor, icon, title} = totalCountVariants[resource]
