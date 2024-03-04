@@ -1,7 +1,7 @@
 import { Authenticated, Refine } from "@refinedev/core";
 import { DevtoolsPanel, DevtoolsProvider } from "@refinedev/devtools";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
-import { Home, ForgotPassword, Login, Register } from "./pages"
+import { Home, ForgotPassword, Login, Register, CompanyList } from "./pages"
 import {
   useNotificationProvider,
 } from "@refinedev/antd";
@@ -56,6 +56,7 @@ function App() {
                     </Authenticated>
                   }>
                   <Route index element={<Home />} />
+                  <Route path="/companies" element={<CompanyList />} />
                   </Route>
                 </Routes>
                 <RefineKbar />
