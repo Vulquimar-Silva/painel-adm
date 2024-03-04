@@ -77,7 +77,7 @@ const UpcomingEvents = () => {
           }}
         />
       )}
-      {/* 2:00:00 */}
+
       {
         !isLoading && data?.data.length === 0 && (
           <span
