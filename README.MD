@@ -14,6 +14,7 @@ Um Framework React para construir ferramentas internas, painéis de administraç
 
 Os hooks e componentes do Refine simplificam o processo de desenvolvimento e eliminam as tarefas repetitivas ao fornecer soluções padrão da indústria para aspectos cruciais de um projeto, incluindo autenticação, controle de acesso, roteamento, rede, gerenciamento de estado e i18n (internacionalização).
 
+
 ## Available Scripts
 
 ### Running the development server.
