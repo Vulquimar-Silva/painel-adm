@@ -35,8 +35,6 @@ const LatestActivities = () => {
     return null
   }
 
-  // 2:53:00
-
   const isLoading = isLoadingAudit || isLoadingDeals
 
   return (
