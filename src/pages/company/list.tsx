@@ -9,9 +9,9 @@ import { CreateButton, DeleteButton, EditButton, FilterDropdown, List, useTable 
 import { getDefaultFilter, useGo } from '@refinedev/core'
 import { Input, Space, Table } from 'antd'
 
-type SearchValues = {
-  name: string;
-};
+interface SearchValues {
+  name?: string;
+}
 
 export const CompanyList = ({ children }: React.PropsWithChildren) => {
   const go = useGo()
