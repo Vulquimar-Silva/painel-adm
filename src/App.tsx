@@ -20,37 +20,38 @@ import Layout from "./components/layout";
 import { resources } from "./config/resources";
 import Create from "./pages/company/create";
 import Edit from "./pages/company/edit";
+import List from "./pages/tasks/list";
 
 function App() {
   return (
     <BrowserRouter>
       <RefineKbarProvider>
-          <AntdApp>
-            <DevtoolsProvider>
-              <Refine
-                dataProvider={dataProvider}
-                liveProvider={liveProvider}
-                notificationProvider={useNotificationProvider}
-                routerProvider={routerBindings}
-                authProvider={authProvider}
-                resources={resources}
-                options={{
-                  syncWithLocation: true,
-                  warnWhenUnsavedChanges: true,
-                  useNewQueryKeys: true,
-                  projectId: "fsCEpR-T6fbR8-Ta3tN0",
-                  liveMode: "auto",
-                }}
-              >
-                <Routes>
-                  <Route path="/register" element={<Register />} />
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/forgot-password" element={<ForgotPassword />} />
-                  <Route
-                    element={
+        <AntdApp>
+          <DevtoolsProvider>
+            <Refine
+              dataProvider={dataProvider}
+              liveProvider={liveProvider}
+              notificationProvider={useNotificationProvider}
+              routerProvider={routerBindings}
+              authProvider={authProvider}
+              resources={resources}
+              options={{
+                syncWithLocation: true,
+                warnWhenUnsavedChanges: true,
+                useNewQueryKeys: true,
+                projectId: "fsCEpR-T6fbR8-Ta3tN0",
+                liveMode: "auto",
+              }}
+            >
+              <Routes>
+                <Route path="/register" element={<Register />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route
+                  element={
                     <Authenticated
                       key="authenticated-layout"
-                      fallback={<CatchAllNavigate to="/login"/>}
+                      fallback={<CatchAllNavigate to="/login" />}
                     >
                       <Layout>
                         <Outlet />
@@ -63,15 +64,18 @@ function App() {
                     <Route path="new" element={<Create />} />
                     <Route path="edit/:id" element={<Edit />} />
                   </Route>
+                  <Route path="/tasks">
+                    <Route index element={<List />} />
                   </Route>
-                </Routes>
-                <RefineKbar />
-                <UnsavedChangesNotifier />
-                <DocumentTitleHandler />
-              </Refine>
+                </Route>
+              </Routes>
+              <RefineKbar />
+              <UnsavedChangesNotifier />
+              <DocumentTitleHandler />
+            </Refine>
             <DevtoolsPanel />
-            </DevtoolsProvider>
-          </AntdApp>
+          </DevtoolsProvider>
+        </AntdApp>
       </RefineKbarProvider>
     </BrowserRouter>
   );
